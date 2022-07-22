@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:paddingVertical="25dp"
+        android:paddingHorizontal="30dp"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imgLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/descImgLogin"
+            android:src="@drawable/ic_login"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/labelLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/labelLogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgLogin"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textFontWeight="900"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            tools:ignore="UnusedAttribute" />
+        <TextView
+            android:id="@+id/labelWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/labelLoginWelcome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/labelLogin"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textEmailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/labelWelcome"
+            android:layout_marginTop="15dp"
+            android:hint="@string/hintEmailAddress"
+            app:startIconDrawable="@drawable/ic_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textEmailLayout"
+            android:layout_marginTop="15dp"
+            android:hint="@string/hintPassword"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/ic_password"
+            app:errorIconDrawable="@null"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textBtnLogin"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/textPasswordLayout"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#B113EA"
+            />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progressIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLogin"
+            app:layout_constraintBottom_toTopOf="@id/layoutLoginFooter"
+            android:layout_marginTop="15dp"
+            />
+        <LinearLayout
+            android:id="@+id/layoutLoginFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progressIndicator"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:id="@+id/labelMember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelLoginMember"
+                android:layout_marginEnd="5dp"
+                />
+
+            <TextView
+                android:id="@+id/btnNavigateRegister"
+                android:text="@string/textBtnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#B113EA"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

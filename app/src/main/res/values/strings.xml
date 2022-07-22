@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Do I Need It</string>
+    <string name="labelLogin">Login to your account</string>
+    <string name="labelLoginWelcome">Welcome back! You have been missed.</string>
+    <string name="labelRegister">Register your account</string>
+    <string name="labelRegisterWelcome">Enter your credentials to continue.</string>
+    <string name="labelRegisterMember">Already a member?</string>
+    <string name="labelLoginMember">New member?</string>
+    <string name="hintFullname">Fullname</string>
+    <string name="hintMobileNumber">Mobile Number</string>
+    <string name="hintEmailAddress">Email Address</string>
+    <string name="hintPassword">Password</string>
+    <string name="hintConfirmPassword">Confirm Password</string>
+    <string name="textBtnRegister">Register</string>
+    <string name="textBtnLogin">Login</string>
+    <string name="descImgRegister">Register Illustration</string>
+    <string name="descImgLogin">Login Illustration</string>
+    <string name="textBlankEmailAddress">Enter email address</string>
+    <string name="textInvalidEmailAddress">Invalid email address</string>
+    <string name="textBlankPassword">Enter password</string>
+    <string name="textLengthErrorPassword">Use 8 characters or more for your password</string>
+    <string name="textBlankConfirmPassword">Enter confirm password</string>
+    <string name="textBlankCurrentPassword">Enter current password</string>
+    <string name="textBlankNewPassword">Enter new password</string>
+    <string name="textUnmatchPassword">Password must match</string>
+    <string name="textSameUpdatePassword">New password should not be as same as current password</string>
+    <string name="textInvalidMobileNumber">Invalid mobile number</string>
+    <string name="textBlankMobileNumber">Enter mobile number</string>
+    <string name="textBlankFullname">Enter fullname</string>
+    <string name="textBlankProductTitle">Enter product title</string>
+    <string name="textBlankProductPrice">Enter product price</string>
+    <string name="textBlankProductDescription">Enter product description</string>
+    <string name="textBlankProductUrl">Enter product url</string>
+    <string name="textInvalidProductUrl">Invalid product url</string>
+    <string name="labelBtnAdd">Add</string>
+    <string name="labelBtnEdit">Edit</string>
+</resources>
